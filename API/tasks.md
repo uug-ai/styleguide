@@ -10,20 +10,24 @@
 
 PATCH /tasks/{id}
 
-- id: string
+- id: string \
 Id of the task
 
-- updates: object
+- updates: object \
 The fields of the task that should be updated
+
+#### Notes
+
+- Any fields that should never be updated like _id, user_id, or creation_date will be removed from the updates data. \
 
 ### Response
 
 **200**
 
-- Data: object
+- Data: object \
 The fields that were updated
 
-- message: string
-success message
+- message: string \
+Success message
 
 ## Delete Task
