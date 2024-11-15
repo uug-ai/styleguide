@@ -1,3 +1,3 @@
 # styleguide
 
-[API Update](api/index.md)
+[API Update](API/index.md)
