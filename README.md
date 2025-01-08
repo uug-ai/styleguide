@@ -1,6 +1,14 @@
 # Styleguide
 
-This repository contains our code style guide which is agnostic from programming languages.
+This repository contains our code style guide, which is agnostic of programming languages. The goal of this guide is to improve the quality and uniformity of the code we write.
+
+We currently implement the following programming languages:
+
+- **Golang**: For APIs, microservices, and media.
+- **Python**: For data science, machine learning, and computer vision (OpenCV).
+- **TypeScript/JavaScript**: For building web-based user interfaces.
+
+We may explore other programming languages in the future, such as Rust. The principles in this repository should apply to any language, and updates will be made as necessary.
 
 ## Table of Contents
 
@@ -16,6 +24,7 @@ This repository contains our code style guide which is agnostic from programming
 10. [Security Considerations](#security-considerations)
 11. [Domain driven design](#domain-driven-design)
 12. [APIs and Contracts](#api)
+13. [Observability](#observability)
 
 ## General Guidelines
 
@@ -68,6 +77,9 @@ This repository contains our code style guide which is agnostic from programming
 
 ## Code Reviews
 
+We use [GitHub Pull Requests](https://github.blog/developer-skills/github/beginners-guide-to-github-creating-a-pull-request/) to evaluate and contribute new work.
+
+- Create a new branch named: (bug/pr-description, feature/pr-description, or enhancement/pr-description)
 - Focus on improving code quality, not criticizing the author.
 - Review for functionality, readability, performance, and adherence to standards.
 - Provide actionable, constructive feedback.
@@ -95,11 +107,10 @@ This repository contains our code style guide which is agnostic from programming
 
 ...
 
+## Observability
+
+- OpenTelemetry (to be implemented).
+
 ## Contributions
 
 We welcome contributions to improve this guide. Please follow the contribution guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-
-Fields that should never be updated will be removed from the request by the API before applying the updates.
-
-Upon a successful update, the API should return a response with a status code of `200 OK`. The response body will include a `Data` object, which contains the fields that were updated, and a `message` string, which provides a success message indicating that the update was successful.
