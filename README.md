@@ -2,6 +2,10 @@
 
 This repository contains our code style guide which is agnostic from programming languages.
 
+## Domain driven design
+
+- Protocol buffers
+
 ## API's and contracts
 
 Within UUG.AI we embrace the concept of Microservices... 
