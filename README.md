@@ -10,11 +10,12 @@ This repository contains our code style guide which is agnostic from programming
 
 Within UUG.AI we embrace the concept of Microservices... 
 
-### Success response
+### Responses 
+#### Success response
 
     ... 
 
-### Error response
+#### Error response
 
     c.JSON(api.CreateError(
 			api.StatusBadRequest,
@@ -24,8 +25,8 @@ Within UUG.AI we embrace the concept of Microservices...
 			},
     ))
 
-
-### Updating / PATCH
+### Request
+#### [PATCH] Updating objects
 
 To update information in the API, use the `PATCH` method. Construct the request URL with the resource identifier, such as `PATCH /{resource}/{id}`. The request body should contain the following parameters:
 
