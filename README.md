@@ -34,7 +34,7 @@ This repository contains our code style guide which is agnostic from programming
 - Use meaningful, descriptive names for variables, functions, classes, and files.
 - Follow consistent casing rules (e.g., camelCase, snake_case, or PascalCase).
 - Avoid abbreviations unless they are widely recognized.
-- Use singular or plural forms appropriately (e.g., `user` vs. `users` for collections).
+- Use plural forms appropriately (e.g. `users` for collections).
 
 ## Comments and Documentation
 
