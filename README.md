@@ -91,10 +91,9 @@ We use [GitHub Pull Requests](https://github.blog/developer-skills/github/beginn
 
 ## Security Considerations
 
-- Avoid hardcoding sensitive data like API keys, credentials, or tokens.
-- Sanitize and validate all user inputs to prevent vulnerabilities.
-- Use secure libraries and frameworks where possible.
-- Regularly update dependencies to address known security issues.
+- Use environment variables: avoid hardcoding sensitive data like API keys, credentials, or tokens.
+- Use Trivy as security scanner in pipelines: Use secure libraries and frameworks where possible.
+- Rebuild containter images to regularly update dependencies to address known security issues.
 
 ## Domain driven design
 
