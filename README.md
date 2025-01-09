@@ -29,18 +29,17 @@ We may explore other programming languages in the future, such as Rust. The prin
 ## General Guidelines
 
 - Repository naming should be easy, and ideally be a described using single word (cli, hub, admin, etc).
-- Seperation of concerns: break down complex code in one ore more functions or repositories.
+- Use modular design: Break down functionality into smaller, reusable components or functions and repositories.
 
 ## Code Structure
 
 - Organize code logically with clear separation of concerns.
-- Use modular design: Break down functionality into smaller, reusable components or functions.
 - Avoid deeply nested structures; aim for a flat and concise hierarchy.
 - Group related code together (e.g., functions, classes, constants).
 
 ## Naming Conventions
 
-- Use meaningful, descriptive names for variables, functions, classes, and files.
+- Filename: Use lowercase letters seperated by underscores.
 - Follow consistent casing rules (e.g., camelCase, snake_case, or PascalCase).
 - Avoid abbreviations unless they are widely recognized.
 - Use plural forms appropriately (e.g. `users` for collections).
