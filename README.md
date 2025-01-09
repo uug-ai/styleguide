@@ -28,6 +28,8 @@ We may explore other programming languages in the future, such as Rust. The prin
 
 ## General Guidelines
 
+- Repository naming should be easy, and ideally be a described using single word (agent, vault, cli, hub, admin, etc).
+- Seperation of concerns: break down complex code in one ore more functions or repositories.
 - **Consistency is key**: Follow a uniform style guide for the project or team.
 - **Keep it simple**: Write code that is easy to understand, avoiding unnecessary complexity.
 - **Focus on readability**: Optimize code for humans first, not just machines.
