@@ -1,3 +1,7 @@
+
+
+# REQUESTS
+
 ## Update
 
 To update information in the API, use the `PATCH` method. Construct the request URL with the resource identifier, such as `PATCH /{resource}/{id}`. The request body should contain the following parameters:
@@ -9,9 +13,9 @@ Fields that should never be updated will be removed from the request by the API 
 
 Upon a successful update, the API should return a response with a status code of `200 OK`. The response body will include a `Data` object, which contains the fields that were updated, and a `message` string, which provides a success message indicating that the update was successful.
 
-## Responses
+# Responses
 
-# Status codes:
+### Status codes:
 
 Possible status codes returned by the API:
 
@@ -22,7 +26,7 @@ Possible status codes returned by the API:
 - `500`: **StatusInternalServerError** - Internal Server Error
 - `404`: **StatusNotFound** - Not Found
 
-# Success
+## Success
 
 Upon a successful update, the API returns a 200 OK status code and these parameters:
 
@@ -49,7 +53,7 @@ Example response:
 			"data": {}
 	}
 
-# Error
+## Error
 
 If the update fails, the API returns an appropriate error status code (e.g., 400 Bad Request, 500 Internal Server Error) and these parameters:
 
@@ -73,3 +77,9 @@ Example response:
 		"errorCode": "error_code",
 		"message": "Error message"
 	}
+
+# Naming conventions
+
+## urls
+
+Use [kebab casing](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case) for longer names to improve readability.
